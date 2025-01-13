@@ -28,7 +28,7 @@ WRITER = Writer()
 ENV = TimeLimit(env=HIVPatient(domain_randomization=False), max_episode_steps=200)
 
 CONFIG = {
-    "nb_neurons": 512,
+    "nb_neurons": 256,
     "nb_actions": ENV.action_space.n,
     "state_dim": ENV.observation_space.shape[0],
     "device": torch.device("cuda" if torch.cuda.is_available() else "cpu"),
