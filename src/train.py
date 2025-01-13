@@ -207,7 +207,7 @@ class ProjectAgent:
                 WRITER.display(f"Episode return: {episode_cum_reward}\n", "txt")
                 if episode_cum_reward > max_reward_t:
                     max_reward_t = episode_cum_reward
-                    torch.save(self.model.state_dict(), f"weights_512_{episode}.pth")
+                    torch.save(self.model.state_dict(), f"weights_256_{episode}.pth")
 
                 state, _ = env.reset()
                 episode_return.append(episode_cum_reward)
