@@ -41,7 +41,7 @@ CONFIG = {
     "epsilon_delay_decay": 300,
     "batch_size": 500,
     "gradient_steps": 5,
-    "update_target_strategy": "ema",
+    "update_target_strategy": "replace",
     "update_target_freq": 200,
     "update_target_tau": 0.005,
     "max_episode": 2_000,
